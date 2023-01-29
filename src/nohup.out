@@ -2013,3 +2013,174 @@ Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 loc
 Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
 Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
 Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+My server Id: 1
+My server Id: 3
+My server Id: 0
+My server Id: 2
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+My server Id: 1
+My server Id: 0
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081}]}
+My server Id: 0
+My server Id: 1
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081}]}
+My server Id: 1
+My server Id: 0
+My server Id: 3
+My server Id: 2
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+2023/01/28 15:27:54 netsort.go:203: Could not dial:  dial tcp 127.0.0.1:8083: connect: can't assign requested address
+2023/01/28 15:27:54 netsort.go:203: Could not dial:  dial tcp 127.0.0.1:8083: connect: can't assign requested address
+2023/01/28 15:27:54 netsort.go:203: Could not dial:  dial tcp 127.0.0.1:8081: connect: can't assign requested address
+2023/01/28 15:27:54 netsort.go:203: Could not dial:  dial tcp 127.0.0.1:8081: connect: can't assign requested address
+2023/01/28 15:27:54 netsort.go:203: Could not dial:  dial tcp 127.0.0.1:8083: connect: can't assign requested address
+2023/01/28 15:27:54 netsort.go:203: Could not dial:  dial tcp 127.0.0.1:8081: connect: can't assign requested address
+2023/01/28 15:27:54 netsort.go:203: Could not dial:  dial tcp 127.0.0.1:8081: connect: can't assign requested address
+2023/01/28 15:27:54 netsort.go:203: Could not dial:  dial tcp 127.0.0.1:8083: connect: can't assign requested address
+2023/01/28 15:27:54 netsort.go:203: Could not dial:  dial tcp 127.0.0.1:8083: connect: can't assign requested address
+2023/01/28 15:27:54 netsort.go:203: Could not dial:  dial tcp 127.0.0.1:8081: connect: can't assign requested address
+2023/01/28 15:27:54 netsort.go:203: Could not dial:  dial tcp 127.0.0.1:8081: connect: can't assign requested address
+2023/01/28 15:27:54 netsort.go:203: Could not dial:  dial tcp 127.0.0.1:8083: connect: can't assign requested address
+2023/01/28 15:27:54 netsort.go:203: Could not dial:  dial tcp 127.0.0.1:8081: connect: can't assign requested address
+2023/01/28 15:27:54 netsort.go:203: Could not dial:  dial tcp 127.0.0.1:8081: connect: can't assign requested address
+2023/01/28 15:27:54 netsort.go:203: Could not dial:  dial tcp 127.0.0.1:8083: connect: can't assign requested address
+2023/01/28 15:27:54 netsort.go:203: Could not dial:  dial tcp 127.0.0.1:8083: connect: can't assign requested address
+2023/01/28 15:27:54 netsort.go:203: Could not dial:  dial tcp 127.0.0.1:8081: connect: can't assign requested address
+2023/01/28 15:27:54 netsort.go:203: Could not dial:  dial tcp 127.0.0.1:8081: connect: can't assign requested address
+2023/01/28 15:27:54 netsort.go:203: Could not dial:  dial tcp 127.0.0.1:8083: connect: can't assign requested address
+2023/01/28 15:27:54 netsort.go:203: Could not dial:  dial tcp 127.0.0.1:8083: connect: can't assign requested address
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x0 pc=0x1121363]
+
+goroutine 1 [panic: panic: runtime error: invalid memory address or nil pointer dereference
+runningruntime error: invalid memory address or nil pointer dereferencepanic: 
+runtime error: invalid memory address or nil pointer dereference[signal ]:
+[signal 
+main.startClient[signal (SIGSEGV: segmentation violationSIGSEGV: segmentation violationSIGSEGV: segmentation violation code= code=0x10x1 code= addr=0x1 addr= addr=0x00x0{ pc=0x1121363 pc=0xc0000aa8000x1121363]
+0x0,  pc=0x90x1121363}, ]
+
+
+goroutine {]
+0xc0000aa810
+, 0x4goroutine goroutine 111 [} [runningrunning, ]:
+ [{running0xc0009fd490]:
+main.startClient, (]:
+main.startClient0x65{main.startClient0xc000122800(, , {0x9(}0xc000124860{, 0xc00001a8e0{, 0x65, 0xc0001228100x9, }}0x9, {0x4})
+, {0xc00001a8f0	, 0x40xc000124870}, , /Users/zouyida/Downloads/cse 224/proj1/src/netsort.go0x4}}{, :, {{0xc0002003f00xc000959b90, 0x650xc00058f650, 0x65, , }2090x65 +0x65, 0x65)
+0x1a3	, 
+/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go0x65main.main}:)
+}(209	)
+/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go)
+	: +/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go	0x1a3/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go
+::108209209 + +0x1a3main.main +(0x1a30xa58
+
+main.main
+()
+main.main	()
+/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go)
+	:108 +	0xa58/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go
+:/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go:108108 +0xa58
+ +0xa58
+My server Id: 2
+My server Id: 1
+My server Id: 3
+My server Id: 0
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+2023/01/28 15:33:59 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8080: connect: can't assign requested address
+2023/01/28 15:33:59 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8082: connect: can't assign requested address
+2023/01/28 15:33:59 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8082: connect: can't assign requested address
+2023/01/28 15:33:59 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8082: connect: can't assign requested address
+2023/01/28 15:33:59 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8080: connect: can't assign requested address
+2023/01/28 15:33:59 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8082: connect: can't assign requested address
+2023/01/28 15:33:59 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8082: connect: can't assign requested address
+2023/01/28 15:33:59 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8082: connect: can't assign requested address
+2023/01/28 15:33:59 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8080: connect: can't assign requested address
+2023/01/28 15:33:59 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8082: connect: can't assign requested address
+2023/01/28 15:33:59 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8082: connect: can't assign requested address
+2023/01/28 15:33:59 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8082: connect: can't assign requested address
+2023/01/28 15:33:59 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8082: connect: can't assign requested address
+2023/01/28 15:33:59 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8080: connect: can't assign requested address
+2023/01/28 15:33:59 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8082: connect: can't assign requested address
+2023/01/28 15:33:59 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8082: connect: can't assign requested address
+2023/01/28 15:33:59 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8080: connect: can't assign requested address
+2023/01/28 15:33:59 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8082: connect: can't assign requested address
+2023/01/28 15:33:59 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8082: connect: can't assign requested address
+2023/01/28 15:33:59 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8082: connect: can't assign requested address
+panic: panic: panic: panic: runtime error: invalid memory address or nil pointer dereferenceruntime error: invalid memory address or nil pointer dereferenceruntime error: invalid memory address or nil pointer dereferenceruntime error: invalid memory address or nil pointer dereference
+
+
+
+[signal [signal [signal [signal SIGSEGV: segmentation violationSIGSEGV: segmentation violationSIGSEGV: segmentation violationSIGSEGV: segmentation violation code= code= code=0x10x1 addr= addr= code=0x00x00x1 pc= addr=0x10x111c4830x0 pc= pc= addr=0x111c483]
+0x0]
+0x111c483
+
+ pc=]
+goroutine goroutine 1
+1goroutine  [1running []:
+ [0x111c483running]
+runningmain.callTransferRecord]:
+(main.callTransferRecord]:
+({{main.callTransferRecord
+0xc0000aa8300xc0000aa830, goroutine , 0x910x9}(}{ [0xc00001a8b0, running, ]:
+{main.callTransferRecord0x90xc0000aa840(}, , , {{{0xc0000aa7d00xc0000aa840, , 0xc00001a8c00x40x9, 0x4}0x4, }}, , {{0xc000b2ed900xc000409490, , 0x640x64, , 0x640x64}}{}0xc0000aa7e0)
+, , {0x4	0xc000af4d90}/Users/zouyida/Downloads/cse 224/proj1/src/netsort2.go)
+:, 	, /Users/zouyida/Downloads/cse 224/proj1/src/netsort2.go:{0x640xc000b284d0, 800x64 +0x1a380,  +
+0x64, 0x64main.main}()
+})
+		0x1a3)
+
+/Users/zouyida/Downloads/cse 224/proj1/src/netsort2.go/Users/zouyida/Downloads/cse 224/proj1/src/netsort2.gomain.main	()
+/Users/zouyida/Downloads/cse 224/proj1/src/netsort2.go::80146	 +/Users/zouyida/Downloads/cse 224/proj1/src/netsort2.go: +:0x1a30xa0d
+
+80main.main146( +)
+0x1a3	/Users/zouyida/Downloads/cse 224/proj1/src/netsort2.go +:1460xa0d
+ +
+0xa0dmain.main()
+	
+/Users/zouyida/Downloads/cse 224/proj1/src/netsort2.go:146 +0xa0d
+My server Id: 2
+My server Id: 3
+My server Id: 1
+My server Id: 0
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+My server Id: 0
+My server Id: 1
+My server Id: 3
+My server Id: 2
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+My server Id: 3
+My server Id: 0
+My server Id: 1
+My server Id: 2
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+2023/01/28 15:56:53 netsort.go:203: Could not dial:  dial tcp 127.0.0.1:8080: connect: connection refused
+2023/01/28 15:56:53 netsort.go:203: Could not dial:  dial tcp 127.0.0.1:8080: connect: connection refused
+2023/01/28 15:56:53 netsort.go:203: Could not dial:  dial tcp 127.0.0.1:8082: connect: connection refused
+My server Id: 1
+My server Id: 0
+My server Id: 2
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+My server Id: 3
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}

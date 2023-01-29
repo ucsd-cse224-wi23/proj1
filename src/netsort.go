@@ -69,7 +69,7 @@ func main() {
 	//fmt.Println("tcp server", curServer.Port)
 	//go startTCPServer(ch, curServer.Host, curServer.Port)
 
-	time.Sleep(200 * time.Millisecond)
+	//time.Sleep(200 * time.Millisecond)
 
 	infileName := os.Args[2]
 	outfileName := os.Args[3]
@@ -100,7 +100,6 @@ func main() {
 		} else {
 			record[0] = 0
 		}
-
 		sendServerId := int(partition(record[1], count))
 		//fmt.Println("getPartion:", partition(record[1], 2))
 		for _, server := range scs.Servers {
