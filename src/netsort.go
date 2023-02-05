@@ -1,7 +1,7 @@
 package main
 
 import (
-	"encoding/binary"
+	//"encoding/binary"
 	"fmt"
 	"io"
 	"io/ioutil"
@@ -69,7 +69,7 @@ func main() {
 	//fmt.Println("tcp server", curServer.Port)
 	//go startTCPServer(ch, curServer.Host, curServer.Port)
 
-	//time.Sleep(200 * time.Millisecond)
+	time.Sleep(200 * time.Millisecond)
 
 	infileName := os.Args[2]
 	outfileName := os.Args[3]
@@ -100,8 +100,7 @@ func main() {
 		} else {
 			record[0] = 0
 		}
-		sendServerId := int(partition(record[1], count))
-		//fmt.Println("getPartion:", partition(record[1], 2))
+		sendServerId := int(partition(record[1], count-1))
 		for _, server := range scs.Servers {
 			if sendServerId == server.ServerId {
 				startClient(server.Host, server.Port, record)
@@ -119,7 +118,7 @@ func main() {
 	}
 
 	//read own records
-	var data [][]byte
+	data := [][]byte{}
 	numCompleted := 0
 	for {
 		if numCompleted == numServers {
@@ -148,8 +147,21 @@ func main() {
 		}
 		return true
 	})
+	writeFile, err := os.Create(outfileName)
+	if err != nil {
+		log.Println("Error opening writefile: ", err)
+	}
+
+	for _, record := range data {
+		writeFile.Write(record)
+	}
+
+	err = writeFile.Close()
+	if err != nil {
+		log.Println("Error closing writefile: ", err)
+	}
 	//fmt.Println("data after sorted", data)
-	var flatData []byte
+	/*var flatData []byte
 	for _, row := range data {
 		flatData = append(flatData, row...)
 	}
@@ -164,6 +176,7 @@ func main() {
 	if err1 != nil {
 		log.Println("cannot write the file")
 	}
+	*/
 }
 
 func handleConnection(conn net.Conn, ch chan<- Inf) {
@@ -196,10 +209,10 @@ func startTCPServer(ch chan<- Inf, host string, port string) {
 func startClient(host string, port string, record []byte) {
 	var conn net.Conn
 	var err error
-	for i := 0; i < 5; i++ {
+	for i := 0; i < 10; i++ {
 		conn, err = net.Dial("tcp", host+":"+port)
 		if err != nil {
-			log.Println("Could not dial: ", err)
+			//log.Println("Could not dial: ", err)
 			time.Sleep(100 * time.Millisecond)
 		} else {
 			break

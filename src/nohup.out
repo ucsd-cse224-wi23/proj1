@@ -2184,3 +2184,395 @@ Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 loc
 Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
 My server Id: 3
 Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+My server Id: 2
+My server Id: 3
+My server Id: 0
+My server Id: 1
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+2023/01/28 16:50:20 netsort.go:183: Could not listen on network:  listen tcp 127.0.0.1:8081: bind: address already in use
+2023/01/28 16:50:20 netsort.go:183: Could not listen on network:  listen tcp 127.0.0.1:8082: bind: address already in use
+2023/01/28 16:50:20 netsort.go:183: Could not listen on network:  listen tcp 127.0.0.1:8083: bind: address already in use
+2023/01/28 16:50:20 netsort.go:183: Could not listen on network:  listen tcp 127.0.0.1:8080: bind: address already in use
+panic: panic: runtime error: invalid memory address or nil pointer dereferencepanic: runtime error: invalid memory address or nil pointer dereferenceruntime error: invalid memory address or nil pointer dereference
+[signal 
+
+SIGSEGV: segmentation violation[signal  code=SIGSEGV: segmentation violation[signal  code=0x1SIGSEGV: segmentation violation addr=0x10x0 addr= pc=0x1120f720x0]
+ pc=
+goroutine 19 [running0x1120f72]:
+]
+
+goroutine main.startTCPServer(190xc00008e180 [, {0xc0000aa860?running, ]:
+0x0main.startTCPServer?}(, 0xc00008e180{0xc0000aa870, ?{, 0x00xc0000aa800??})
+, 	0x0/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go:?185} +0xf2, 
+{created by main.main0xc0000aa810
+?	 code=, /Users/zouyida/Downloads/cse 224/proj1/src/netsort.gopanic: 0x1:runtime error: invalid memory address or nil pointer dereference0x0 addr=65
+? +}0xbb50x0
+[signal )
+SIGSEGV: segmentation violation	 code= pc=0x1120f72/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go]
+:
+185goroutine  +0x10xf2 addr=190x0 [ pc=running0x1120f72]:
+]
+
+main.startTCPServergoroutine (60xc00008e180 [, running{]:
+0xc0000aa830?main.startTCPServer, (0x00xc000074180?, }{, 0xc00001a850{?0xc0000aa840, ?0x0, ?0x0}?, }{)
+0xc00001a860	?/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go, :0x0185? +}0xf2)
+
+	created by /Users/zouyida/Downloads/cse 224/proj1/src/netsort.gomain.main:
+185	 +/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go0xf2:
+65created by  +main.main0xbb5
+
+	/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go:65 +
+0xbb5created by 
+main.main
+	/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go:65 +0xbb5
+My server Id: 3
+My server Id: 2
+My server Id: 1
+My server Id: 0
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+My server Id: 1
+My server Id: 0
+My server Id: 3
+My server Id: 2
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x0 pc=0x112130c]
+
+goroutine 1 [running]:
+main.startClient({0xc00001a850, 0x9}, {0xc00001a860, 0x4}, {0xc000dca620, 0x65, 0x65panic: runtime error: invalid memory address or nil pointer dereference}panic: 
+runtime error: invalid memory address or nil pointer dereference)
+[signal 	SIGSEGV: segmentation violation code=
+0x1/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go addr=0x0[signal  pc=:SIGSEGV: segmentation violation0x112130c208]
+ code= +
+0x14c0x1goroutine  addr=0x0
+1 pc= [runningmain.main]:
+0x112130c]
+main.startClient
+(goroutine {10xc00001a850 [, running0x9]:
+}, main.startClient{(0xc00001a860{, 0xc0000aa8600x4, }0x9, }{, 0xc000be2310{, 0xc0000aa8700x65, , 0x40x65}}, )
+{	0xc000323260/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go, :0x65208,  +(0x650x14c})
+
+	)
+/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go	:107main.main/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go: +(208)
+0xa46 +0x14c	
+
+main.main/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go(:)
+	107 +/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go:0xa46107
+ +0xa46
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x0 pc=0x112130c]
+
+goroutine 1 [running]:
+main.startClient({0xc00001a850, 0x9}, {0xc00001a860, 0x4}, {0xc000543b20, 0x65, 0x65})
+	/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go:208 +0x14c
+main.main()
+	/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go:107 +0xa46
+My server Id: 3
+My server Id: 2
+My server Id: 0
+My server Id: 1
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x0 pc=0x112130c]
+
+goroutine 1 [running]:
+main.startClient({0xc0000aa830, 0x9}, {0xc0000aa840, 0x4}, {0xc0000dc540, 0x65, 0x65})
+	/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go:208 +0x14c
+main.main()
+	/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go:107 +0xa46
+panic: runtime error: invalid memory address or nil pointer dereferencepanic: 
+[signal panic: SIGSEGV: segmentation violationruntime error: invalid memory address or nil pointer dereferenceruntime error: invalid memory address or nil pointer dereference code=
+
+[signal [signal SIGSEGV: segmentation violation0x1SIGSEGV: segmentation violation addr= code= code=0x10x0 pc= addr=0x00x112130c pc=]
+0x112130c
+]
+goroutine 
+1goroutine  [10x1running]:
+ [main.startClientrunning(]:
+{ addr=main.startClient0x0({0xc0000aa8000xc0000aa860, ,  pc=0x90x112130c}0x9, }{]
+0xc0000aa870, , 0x4
+{}goroutine , 0xc0000aa8101,  [0x4{}0xc0000dc620, running{]:
+0xc0000dc3f0, main.startClient0x65(, , 0x650x65, }0x65)
+}	)
+{	/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go0xc00001a8e0:/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go208, :0x9 +}2080x14c +, {
+0xc00001a8f00x14cmain.main, (0x4)
+
+}main.main	(/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go)
+, :	107{/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go0xc0000ae000 +, :0x650xa46, 1070x65 +}0xa46)
+
+	/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go
+:208 +0x14c
+main.main()
+	/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go:107 +0xa46
+My server Id: 1
+My server Id: 3
+My server Id: 0
+My server Id: 2
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+panic: panic: runtime error: invalid memory address or nil pointer dereferenceruntime error: invalid memory address or nil pointer dereference
+
+[signal [signal SIGSEGV: segmentation violation code=0x1SIGSEGV: segmentation violation addr= code=0x00x1 pc=0x112130c]
+
+goroutine  addr=10x0 pc= [0x112130crunning]
+]:
+
+goroutine main.startClient(1{ [0xc0000aa860running, 0x9]:
+}, {main.startClient0xc0000aa870, (0x4{}0xc0000aa7d0, , {0x90xc0004f8380}, {0xc0000aa7e0, , 0x40x65, 0x65}}, {)
+0xc00094bb90, 0x65	, 0x65/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go:208} +)
+	/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go:208 +0x14c
+0x14cmain.main
+(main.main)
+()
+	/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go:107	/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go: +0xa46107
+ +0xa46
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x0 pc=0x112130c]
+
+goroutine 1 [running]:
+main.startClient({0xc0000aa800, 0x9}, {0xc0000aa810, 0x4}, {0xc00061c540, 0x65, 0x65})
+	/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go:208 +0x14c
+main.main()
+	/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go:107 +0xa46
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x0 pc=0x112130c]
+
+goroutine 1 [running]:
+main.startClient({0xc0000aa800, 0x9}, {0xc0000aa810, 0x4}, {0xc0004d2b60, 0x65, 0x65})
+	/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go:208 +0x14c
+main.main()
+	/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go:107 +0xa46
+My server Id: 2
+My server Id: 1
+My server Id: 3
+My server Id: 0
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+panic: panic: panic: runtime error: invalid memory address or nil pointer dereferenceruntime error: invalid memory address or nil pointer dereferenceruntime error: invalid memory address or nil pointer dereference
+
+
+[signal [signal [signal SIGSEGV: segmentation violation code=0x1SIGSEGV: segmentation violation addr=SIGSEGV: segmentation violation0x0 code= pc= code=0x10x11212ec0x1 addr= addr=0x0]
+ pc=0x0
+0x11212ec pc=goroutine ]
+0x11212ec1]
+
+ [goroutine running
+]:
+1goroutine 1 [main.startClient [(running]:
+{0xc0000aa800main.startClient, (0x9running{]:
+}main.startClient0xc00001a850(, {, {0xc0000aa8100x90xc00001a8b0}, , 0x4, {}0xc00001a860, 0x90x4, }{, 0xc000446700}{, , 0xc000e3c1c0{0x65, 0xc00001a8c0, 0x65, }0x4)
+}	, /Users/zouyida/Downloads/cse 224/proj1/src/netsort.go0x65{:0xc000e10a10208,  +0x65, 0x14c0x65
+, main.main}0x65()
+}	)
+/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go)
+:	208	 +/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go:0x14c208: +1070x14c +
+0xa33
+main.main
+(main.main()
+)
+		/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go::107107 + +0xa330xa33
+
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x0 pc=0x11212ec]
+
+goroutine 1 [running]:
+main.startClient({0xc00001a880, 0x9}, {0xc00001a890, 0x4}, {0xc000974af0, 0x65, 0x65})
+	/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go:208 +0x14c
+main.main()
+	/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go:107 +0xa33
+My server Id: 3
+My server Id: 1
+My server Id: 0
+My server Id: 2
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x0 pc=0x11212ec]
+
+goroutine 1 [running]:
+main.startClient({0xc00001a8b0, 0x9}, {0xc00001a8c0, 0x4}, {0xc0005ad570, 0x65, 0x65})
+	/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go:208 +0x14c
+main.main()
+	/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go:107 +0xa33
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x0 pc=0x11212ec]
+
+goroutine 1 [running]:
+main.startClient({0xc00001a8e0, 0x9}, {0xc00001a8f0, 0x4}, {0xc000d6df10, 0x65, 0x65})
+	/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go:208 +0x14c
+main.main()
+	/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go:107 +0xa33
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x0 pc=0x11212ec]
+
+goroutine 1 [running]:
+main.startClient({0xc0000aa860, 0x9}, {0xc0000aa870, 0x4}, {0xc000c2b2d0, 0x65, 0x65})
+	/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go:208 +0x14c
+main.main()
+	/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go:107 +0xa33
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x0 pc=0x11212ec]
+
+goroutine 1 [running]:
+main.startClient({0xc00001a8e0, 0x9}, {0xc00001a8f0, 0x4}, {0xc000b478f0, 0x65, 0x65})
+	/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go:208 +0x14c
+main.main()
+	/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go:107 +0xa33
+My server Id: 1
+My server Id: 0
+My server Id: 3
+My server Id: 2
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+2023/01/28 18:45:26 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8081: connect: can't assign requested address
+2023/01/28 18:45:26 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8082: connect: can't assign requested address
+2023/01/28 18:45:26 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8083: connect: can't assign requested address
+2023/01/28 18:45:26 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8080: connect: can't assign requested address
+2023/01/28 18:45:26 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8081: connect: can't assign requested address
+2023/01/28 18:45:26 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8080: connect: can't assign requested address
+2023/01/28 18:45:26 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8082: connect: can't assign requested address
+2023/01/28 18:45:26 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8083: connect: can't assign requested address
+2023/01/28 18:45:26 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8081: connect: can't assign requested address
+2023/01/28 18:45:26 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8083: connect: can't assign requested address
+2023/01/28 18:45:26 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8080: connect: can't assign requested address
+2023/01/28 18:45:26 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8082: connect: can't assign requested address
+2023/01/28 18:45:26 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8081: connect: can't assign requested address
+2023/01/28 18:45:26 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8083: connect: can't assign requested address
+2023/01/28 18:45:26 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8080: connect: can't assign requested address
+2023/01/28 18:45:26 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8082: connect: can't assign requested address
+2023/01/28 18:45:26 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8081: connect: can't assign requested address
+2023/01/28 18:45:26 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8080: connect: can't assign requested address
+2023/01/28 18:45:26 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8082: connect: can't assign requested address
+2023/01/28 18:45:26 netsort2.go:74: Could not dial:  dial tcp 127.0.0.1:8083: connect: can't assign requested address
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x0 pc=0x111c483]
+
+goroutine 1 [running]:
+main.callTransferRecord({0xc0000aa800, 0x9}, {0xc0000aa810, 0x4}, {0xc000c09880, 0x64, 0x64})
+	/Users/zouyida/Downloads/cse 224/proj1/src/netsort2.go:80 +0x1a3
+main.main()
+	/Users/zouyida/Downloads/cse 224/proj1/src/netsort2.go:146 +0xa0d
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x0 pc=0x111c483]
+
+goroutine 1 [running]:
+main.callTransferRecord({0xc0001227d0, 0x9}, {0xc0001227e0, 0x4}, {0xc000eae4d0, 0x64, panic: 0x64}runtime error: invalid memory address or nil pointer dereference
+panic: [signal runtime error: invalid memory address or nil pointer dereferenceSIGSEGV: segmentation violation
+ code=[signal 0x1)
+SIGSEGV: segmentation violation	/Users/zouyida/Downloads/cse 224/proj1/src/netsort2.go code=:0x180 addr= + addr=0x00x00x1a3 pc= pc=0x111c483
+]
+
+0x111c483goroutine ]
+1
+goroutine  [main.mainrunning1(]:
+ [)
+main.callTransferRecord(running	{]:
+/Users/zouyida/Downloads/cse 224/proj1/src/netsort2.go:0xc00001a8b0main.callTransferRecord146, (0x9} +, 0xa0d
+{{0xc00001a8c00xc0000aa860, , 0x40x9}}, , {{0xc000e8c7000xc0000aa870, , 0x4}0x64, , {0x640xc0003ee230, }0x64, )
+0x64})
+		/Users/zouyida/Downloads/cse 224/proj1/src/netsort2.go/Users/zouyida/Downloads/cse 224/proj1/src/netsort2.go::8080 + +0x1a30x1a3
+
+main.mainmain.main(()
+)
+		/Users/zouyida/Downloads/cse 224/proj1/src/netsort2.go:/Users/zouyida/Downloads/cse 224/proj1/src/netsort2.go:146146 + +0xa0d0xa0d
+
+My server Id: 1
+My server Id: 0
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081}]}
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x0 pc=0x11212ec]
+
+goroutine 1 [running]:
+main.startClient({0xc000122800, 0x9}, {0xc000122810, 0x4}, {0xc0010edab0, 0x65, 0x65})
+	/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go:208 +0x14c
+main.main()
+	/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go:107 +0xa33
+My server Id: 1
+My server Id: 0
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+panic: panic: runtime error: invalid memory address or nil pointer dereferenceruntime error: invalid memory address or nil pointer dereference
+
+[signal [signal SIGSEGV: segmentation violationSIGSEGV: segmentation violation code= code=0x1 addr=0x00x1 pc=0x112130c]
+
+ addr=goroutine 10x0 pc=0x112130c]
+ [
+goroutine running]:
+1main.startClient [running]:
+(main.startClient({0xc000122860{, 0xc0000b0830, 0x9}, {0xc0000b0840, 0x4}, {0xc000028150, 0x65, 0x65})
+	/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go:208 +0x14c
+0x9}, {0xc000122870, main.main0x4(})
+, 	{/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go0xc0001543f0:, 1070x65 +, 0xa460x65
+})
+	/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go:208 +0x14c
+main.main()
+	/Users/zouyida/Downloads/cse 224/proj1/src/netsort.go:107 +0xa46
+My server Id: 1
+My server Id: 0
+My server Id: 2
+My server Id: 3
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+My server Id: 3
+My server Id: 0
+My server Id: 1
+My server Id: 2
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+My server Id: 2
+My server Id: 3
+My server Id: 0
+My server Id: 1
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+My server Id: 2
+My server Id: 0
+My server Id: 1
+My server Id: 3
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+nohup: nohup: nohup: nohup: ./netsort./netsort./netsort: : No such file or directory
+No such file or directory
+./netsort: : No such file or directory
+No such file or directory
+nohup: nohup: nohup: nohup: ./netsort./netsort./netsort: : ./netsort: No such file or directory
+: No such file or directory
+No such file or directory
+No such file or directory
+My server Id: 3
+My server Id: 0
+My server Id: 1
+My server Id: 2
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
+Got the following server configs: {[{0 localhost 8080} {1 localhost 8081} {2 localhost 8082} {3 localhost 8083}]}
